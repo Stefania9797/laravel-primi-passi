@@ -77,11 +77,9 @@
                 </div>
 
                 <div class="links">
-                    <a href="/UNO">UNO</a>
-                    <a href="/DUE">DUE</a>
-                    <a href="/TRE">TRE</a>
-                    <a href="/QUATTRO">QUATTRO</a>
-                    <a href="/CINQUE">CINQUE</a>
+                @foreach ($brands as $brand)
+                <p>{{$brand}}</p>
+                @endforeach
                 </div>
             </div>
         </div>

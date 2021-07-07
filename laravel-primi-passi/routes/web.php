@@ -14,9 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view("home");
     $data =[
-        ["nome"=>"Stefania"],
-        ["nome"=>"Mario"],
+        "brands"=>[
+            "Samsung",
+            "Apple",
+            "LG",
+            "HP",
+            "Lenovo",
+            "Huawei"
+        ]
     ];
+    return view("home" , $data);
 });
